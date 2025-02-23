@@ -1,0 +1,9 @@
+[project]
+name = "ml_mlflow_provider"
+version = "1.0"
+
+[project.entry-points."mlflow.gateway.providers"]
+custom_llm = "providers:CustomLLMProvider"
+
+[tool.setuptools.packages.find]
+include = ["ml_mlflow_provider"]

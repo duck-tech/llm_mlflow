@@ -1,0 +1,27 @@
+services:
+    mlflow-server:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        image: mlflow_server:latest
+        ports:
+            - "5500:5000"
+        command: mlflow server --host 0.0.0.0
+        environment:
+          - MLFLOW_DEPLOYMENTS_TARGET=http://mlflow-gateway-server:7000
+        volumes:
+          - mlruns:/mlruns
+
+    mlflow-gateway-server:
+      image: mlflow_server:latest
+      volumes:
+        - ./config.yaml:/app/config.yaml  # 確保 MLflow Gateway 可以讀取 config.yaml
+        - ./ml_mlflow_provider:/app/ml_mlflow_provider  # ✅ 確保 ml_mlflow_provider 被正確掛載
+      command: mlflow gateway start --config-path /app/config.yaml --port 7000 --host 0.0.0.0
+      environment:
+        - PYTHONPATH=/app:/app/ml_mlflow_provider
+        - LLM_API_KEY=${LLM_API_KEY}
+        - API_URL=${API_URL}
+
+volumes:
+  mlruns:

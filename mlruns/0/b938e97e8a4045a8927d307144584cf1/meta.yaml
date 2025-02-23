@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/babyching/Documents/personal/LLM/ml_flow/mlruns/0/b938e97e8a4045a8927d307144584cf1/artifacts
+end_time: 1740326694164
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b938e97e8a4045a8927d307144584cf1
+run_name: bemused-slug-908
+run_uuid: b938e97e8a4045a8927d307144584cf1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740326538591
+status: 4
+tags: []
+user_id: babyching

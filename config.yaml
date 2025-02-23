@@ -1,0 +1,9 @@
+endpoints:
+  - name: chat
+    endpoint_type: llm/v1/completions
+    model:
+      provider: custom_llm
+      name: llama3.1
+      config:
+        llm_api_key: kelly
+        api_url: https://6f7d-35-247-55-4.ngrok-free.app

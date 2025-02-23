@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/babyching/Documents/personal/LLM/ml_flow/mlruns/0/8bf5f8e7fc5c4e658c679fce38ff00e0/artifacts
+end_time: 1740327028928
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8bf5f8e7fc5c4e658c679fce38ff00e0
+run_name: bittersweet-doe-499
+run_uuid: 8bf5f8e7fc5c4e658c679fce38ff00e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740326699027
+status: 3
+tags: []
+user_id: babyching
