@@ -70,6 +70,8 @@ train_example_2 = dspy.Example(
         }
     ],
     rules=(
+        1.
+        2. 
     )
 ).with_inputs('pins', 'pg_pins')
 
@@ -99,6 +101,7 @@ print(optimized_predictor)
 test_input = {
     "pins": [
         {
+            "name": "TEST_OUT",
         },
         {
         }
