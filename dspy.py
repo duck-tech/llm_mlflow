@@ -1,7 +1,13 @@
 import dspy
+import dspy
+from dspy.evaluate import Evaluate
+import dspy
+from dspy.teleprompt import BootstrapFewShot
+lm = dspy.LM('openai/gpt-3.5-turbo')
+dspy.configure(lm=lm)
 from dspy import LM
 import requests
-
+from dspy.teleprompt import MIPROv2
 class MyCustomAPI(LM):
     def __init__(self, api_url, api_key):
         super().__init__()
