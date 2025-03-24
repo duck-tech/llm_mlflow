@@ -24,6 +24,9 @@ Rule N: [Short and clear condition in natural language]
 Example: [A minimal JSON-style snippet to illustrate this rule]
 
 
+Given the information provided in the `pins` and `pg_pins` fields, analyze the relationships between the pins and power/ground pins to infer logical design rules. List down the inferred logical design rules in the `rules` field.
+p: Rules:
+
 You are an expert in power management design. Below is an example definition of a component, including various power domains (e.g., primary_power, internal_power, and primary_ground) and related pin definitions:
 
 [Insert your example definition here.]
